@@ -40,5 +40,9 @@ public class CorsConfig {
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 		return new CorsFilter(urlBasedCorsConfigurationSource);
 	}
-
+	
+//	@Override
+//	protected void configure(HttpSecurity httpSecurity) throws Exception {
+//		httpSecurity.addFilterBefore(corsFilter(), ChannelProcessingFilter.class);
+//	}
 }
