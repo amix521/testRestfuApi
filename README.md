@@ -2,58 +2,28 @@
 源码[点这里](https://github.com/amix521)
 >本说明语法参考<https://www.runoob.com/markdown/md-link.html>
 ---
->* ### **使用maven构建、springboot+mybatis框架[^m3]**
-#### 1. *为方便代码及简洁，引入了lombok[^m1]，可以使用@Slf4j注解直接使用log来打印日志，可以使用@Getter @Setter注解来代替get、set方法*
-#### 2. *为方便测试接口，引入swagger，在对应接口上添加接口说明及参数说明即可生成对应的页面来测试，需要配置加载及对应的页面资源跨域。
-#### 3. *为方便vo、dto、po[^m2]的相互转化，引入dozer，需要在springboot配置文件做相应的配置来读取相互转换的配置文件。*
-#### 4. *数据库使用的mysql，需要再springboot配置文件spring节点下配置datasource*
+>* #### **使用maven构建、springboot+mybatis框架[^m3]**
+1. *为方便代码及简洁，引入了lombok[^m1]，可以使用@Slf4j注解直接使用log来打印日志，可以使用@Getter @Setter注解来代替get、set方法*
+2. *为方便测试接口，引入swagger，在对应接口上添加接口说明及参数说明即可生成对应的页面来测试，需要配置加载及对应的页面资源跨域。
+3. *为方便vo、dto、po[^m2]的相互转化，引入dozer，需要在springboot配置文件做相应的配置来读取相互转换的配置文件。*
+4. *数据库使用的mysql，需要再springboot配置文件spring节点下配置datasource*
 
 
 
 ---
->* ### **该项目主要包含了以下相关测试内容**
-#### 1. *一个live2d.html对应的接口*
-#### 2. *restful接口规范练习UserController*
-#### 3. *swagger使用范例*
-#### 4. *vo-dto的使用范例UserController.update*
-#### 5. *dozer的使用范例UserController.update*
-#### 6. *websocket的简单demo[^5]*
-#### 7. *基于websocket的stomp的简单demo[^m4]*
-#### 8. *自定义注解，target包下*
-#### 9. *关于自定义注解的延伸使用aop横切,MyLog*
-#### 10. *关于自定义注解的延伸使用登录验证，通过拦截器LoginInterceptor[^m6]内获取注解标签来做业务处理*
+>* #### **该项目主要包含了以下相关测试内容**
+1. *一个live2d.html对应的接口*
+2. *restful接口规范练习UserController*
+3. *swagger使用范例*
+4. *vo-dto的使用范例UserController.update*
+5. *dozer的使用范例UserController.update*
+6. *websocket的简单demo[^5]*
+7. *基于websocket的stomp的简单demo[^m4]*
+8. *自定义注解，target包下*
+9. *关于自定义注解的延伸使用aop横切,MyLog*
+10. *关于自定义注解的延伸使用登录验证，通过拦截器LoginInterceptor[^m6]内获取注解标签来做业务处理*
 
->※福利markdown画流程图↓※
-```mermaid
-graph LR
-A[方形] -->B(圆角)
-    B --> C{条件a}
-    C -->|a=1| D[结果1]
-    C -->|a=2| E[结果2]
-    F[横向流程图]
-```
-
-```flow
-st=>start: 开始框
-op=>operation: 处理框
-cond=>condition: 判断框(是或否?)
-sub1=>subroutine: 子流程
-io=>inputoutput: 输入输出框
-e=>end: 结束框
-st->op->cond
-cond(yes)->io->e
-cond(no)->sub1(right)->op
-```
-
-```sequence
-对象A->对象B: 对象B你好吗?（请求）
-Note right of 对象B: 对象B的描述
-Note left of 对象A: 对象A的描述(提示)
-对象B-->对象A: 我很好(响应)
-对象A->对象B: 你真的好吗？
-```
->※福利画流程图↑※
-
+####附加
 [^m1]:因为eclipse不支持该插件，所以要用特殊方法引入
 [^m2]:vo对应展示层，dto对应服务层，po对应固话层
 [^m3]:需要在springboot配置文件加入对应配置

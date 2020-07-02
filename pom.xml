@@ -90,11 +90,23 @@
             <version>1.1.10</version>
         </dependency>
         
+        <!-- 单元测试 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+		
+		<!-- kafka -->
+		<dependency>
+	        <groupId>org.springframework.kafka</groupId>
+	        <artifactId>spring-kafka</artifactId>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.springframework.kafka</groupId>
+	        <artifactId>spring-kafka-test</artifactId>
+	        <scope>test</scope>
+	    </dependency>
 		
 		<!-- swagger -->
 		<dependency>
@@ -129,7 +141,7 @@
 		    <artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>	
         
-		<!-- lombok依赖 解决get/set繁琐代码-->
+		<!-- lombok依赖 解决get/set/log繁琐代码-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -142,6 +154,23 @@
 			<version>0.9.0</version>
 		</dependency>
 		
+		<!-- 加密时使用 -->
+		<dependency>
+		   <groupId>com.github.ulisesbocchio</groupId>
+		   <artifactId>jasypt-spring-boot-starter</artifactId>
+		   <version>1.8</version>
+		</dependency>
+		
+		<!-- 人脸引擎，不知道什么鬼 -->
+		<dependency>
+            <groupId>com.lzw</groupId>
+            <artifactId>seetafaceJNI</artifactId>
+            <version>1.1</version>
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/lib/seetafaceJNI-1.1.jar</systemPath>-->
+       </dependency>
+		
+
 		<!-- aop 自定义注解时使用 -->
 		<dependency>
             <groupId>org.springframework.boot</groupId>

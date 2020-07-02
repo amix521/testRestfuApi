@@ -4,7 +4,7 @@ server:
 spring:
   # 配置文件选择(dev，pro)
   profiles:
-    active: dev
+    active: dev		#激活dev配置文件，如有重复则被dev覆盖
   # 国际化（消息源自动配置,springboot默认找出messages）
   messages:
      basename: i18n.messages
@@ -15,7 +15,7 @@ spring:
     password: zabbix
   resources:
     static-locations: classpath:/static/
- 
+
 eureka:
   #instance:
     #prefer-ip-address: true
@@ -28,6 +28,10 @@ eureka:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10 
 
+#jasypt加密的盐值
+jasypt:
+  encryptor:
+    password: amix
 
 
 
