@@ -11,6 +11,7 @@
 
 
 ---
+<<<<<<< HEAD
 >* #### **该项目主要包含了以下相关测试内容**
 1. *一个live2d.html对应的接口*
 2. *restful接口规范练习UserController*
@@ -24,6 +25,21 @@
 10. *关于自定义注解的延伸使用登录验证，通过拦截器LoginInterceptor[^m6]内获取注解标签来做业务处理*
 
 ####附加
+=======
+>* ### **该项目主要包含了以下相关测试内容**
+#### 1. *一个live2d.html对应的接口*
+#### 2. *restful接口规范练习UserController*
+#### 3. *swagger使用范例*
+#### 4. *vo-dto的使用范例UserController.update*
+#### 5. *dozer的使用范例UserController.update*
+#### 6. *websocket的简单demo[^5]*
+#### 7. *基于websocket的stomp的简单demo[^m4]*
+#### 8. *自定义注解，target包下*
+#### 9. *关于自定义注解的延伸使用aop横切,MyLog*
+#### 10. *关于自定义注解的延伸使用登录验证，通过拦截器LoginInterceptor[^m6]内获取注解标签来做业务处理*
+
+
+>>>>>>> c7f0af0c62a784b9bab0dbcaf7ec20822518ddbb
 [^m1]:因为eclipse不支持该插件，所以要用特殊方法引入
 [^m2]:vo对应展示层，dto对应服务层，po对应固话层
 [^m3]:需要在springboot配置文件加入对应配置
